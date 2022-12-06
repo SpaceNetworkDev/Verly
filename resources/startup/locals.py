@@ -1,6 +1,6 @@
 # /usr/bin/python3
-# Ultroid - UserBot
-# Copyright (C) 2021-2022 TeamUltroid
+# Verly (Space Ultroid) - UserBot
+# Copyright (C) 2021-2022 TeamUltroid for Ultroid & Space Network for Verly
 #
 # This file is a part of < https://github.com/TeamUltroid/Ultroid/ >
 # Please read the GNU Affero General Public License in
@@ -11,12 +11,12 @@
 import os
 
 a = r"""
-  _    _ _ _             _     _
- | |  | | | |           (_)   | |
- | |  | | | |_ _ __ ___  _  __| |
- | |  | | | __| '__/ _ \| |/ _  |
- | |__| | | |_| | | (_) | | (_| |
-  \____/|_|\__|_|  \___/|_|\__,_|
+                _
+/\   /\___ _ __| |_   _
+\ \ / / _ \ '__| | | | |
+ \ V /  __/ |  | | |_| |
+  \_/ \___|_|  |_|\__, |
+                  |___/
 """
 
 
@@ -26,12 +26,12 @@ def start():
     check_for_py()
 
     print(f"{a}\n\n")
-    print("Welcome to Ultroid, lets start setting up!\n\n")
+    print("Welcome to Verly(Space Ultroid), lets start setting up!\n\n")
     print("Cloning the repository...\n\n")
-    os.system("rm -rf Ultroid")
-    os.system("git clone https://github.com/TeamUltroid/Ultroid")
+    os.system("rm -rf Verly")
+    os.system("git clone https://github.com/SpaceNetworkDev/Verly")
     print("\n\nDone")
-    os.chdir("Ultroid")
+    os.chdir("Verly")
     clear_screen()
     print(a)
     print("\n\nLet's start!\n")
@@ -57,7 +57,7 @@ def start():
         "REDIS_URI",
         "REDIS_PASSWORD",
     ]
-    all_done = "# Ultroid Environment Variables.\n# Do not delete this file.\n\n"
+    all_done = "# Verly Environment Variables.\n# Do not delete this file.\n\n"
     for i in varrs:
         all_done += do_input(i)
     clear_screen()
@@ -84,7 +84,7 @@ def start():
         print("Skipped!")
     clear_screen()
     print(a)
-    print("\nStarting Ultroid...")
+    print("\nStarting Verly...")
     os.system("sh startup")
 
 

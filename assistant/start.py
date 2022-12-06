@@ -1,5 +1,5 @@
-# Ultroid - UserBot
-# Copyright (C) 2021-2022 TeamUltroid
+# Verly (Space Ultroid) - UserBot
+# Copyright (C) 2021-2022 TeamUltroid for Ultroid & Space Network for Verly
 #
 # This file is a part of < https://github.com/TeamUltroid/Ultroid/ >
 # PLease read the GNU Affero General Public License in
@@ -29,36 +29,36 @@ if Owner_info_msg is None:
 
 **Message Forwards** - {udB.get_key("PMBOT")}
 
-**Ultroid [v{ultroid_version}](https://github.com/TeamUltroid/Ultroid), powered by @TeamUltroid**
+**Verly [v{ultroid_version}](https://github.com/SpaceNetworkDev/Verly), powered by @SpaceNetworkEU**
 """
 
 
 _settings = [
     [
-        Button.inline("API Kᴇʏs", data="cbs_apiset"),
-        Button.inline("Pᴍ Bᴏᴛ", data="cbs_chatbot"),
+        Button.inline("API Keys", data="cbs_apiset"),
+        Button.inline("PM Bot", data="cbs_chatbot"),
     ],
     [
-        Button.inline("Aʟɪᴠᴇ", data="cbs_alvcstm"),
-        Button.inline("PᴍPᴇʀᴍɪᴛ", data="cbs_ppmset"),
+        Button.inline("Alive", data="cbs_alvcstm"),
+        Button.inline("PmPermit", data="cbs_ppmset"),
     ],
     [
-        Button.inline("Fᴇᴀᴛᴜʀᴇs", data="cbs_otvars"),
-        Button.inline("VC Sᴏɴɢ Bᴏᴛ", data="cbs_vcb"),
+        Button.inline("Features", data="cbs_otvars"),
+        Button.inline("VC Song Bot", data="cbs_vcb"),
     ],
-    [Button.inline("« Bᴀᴄᴋ", data="mainmenu")],
+    [Button.inline("« Back", data="mainmenu")],
 ]
 
 _start = [
     [
-        Button.inline("Lᴀɴɢᴜᴀɢᴇ 🌐", data="lang"),
-        Button.inline("Sᴇᴛᴛɪɴɢs ⚙️", data="setter"),
+        Button.inline("🗣 Language", data="lang"),
+        Button.inline("🛠 Settings", data="setter"),
     ],
     [
-        Button.inline("Sᴛᴀᴛs ✨", data="stat"),
-        Button.inline("Bʀᴏᴀᴅᴄᴀsᴛ 📻", data="bcast"),
+        Button.inline("📊 Stats", data="stat"),
+        Button.inline("📻 Broadcast", data="bcast"),
     ],
-    [Button.inline("TɪᴍᴇZᴏɴᴇ 🌎", data="tz")],
+    [Button.inline("⏰ TimeZone", data="tz")],
 ]
 
 
@@ -68,7 +68,7 @@ async def own(event):
         mention=event.sender.mention, me=inline_mention(ultroid_bot.me)
     )
     if custom_info:
-        msg += "\n\n• Powered by **@TeamUltroid**"
+        msg += "\n\n• Powered by **@SpaceNetworkEU**"
     await event.edit(
         msg,
         buttons=[Button.inline("Close", data="closeit")],
@@ -110,7 +110,7 @@ async def ultroid(event):
             await get_stored_file(event, args)
         if not udB.get_key("STARTMSG"):
             if udB.get_key("PMBOT"):
-                ok = "You can contact my master using this bot!!\n\nSend your Message, I will Deliver it To Master."
+                ok = "You can contact my owner using this bot!!\n\nSend your Message, I will Deliver it To Owner."
             await event.reply(
                 f"Hey there {mention}, this is Ultroid Assistant of {me}!\n\n{ok}",
                 file=udB.get_key("STARTMEDIA"),
@@ -159,7 +159,7 @@ async def ultroid(event):
 @callback("stat", owner=True)
 async def botstat(event):
     ok = len(get_all_users("BOT_USERS"))
-    msg = """Ultroid Assistant - Stats
+    msg = """Verly Assistant - Stats
 Total Users - {}""".format(
         ok,
     )

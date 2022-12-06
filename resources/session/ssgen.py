@@ -1,21 +1,21 @@
-#!/usr/bin/python3
-# Ultroid - UserBot
-# Copyright (C) 2021-2022 TeamUltroid
+# /usr/bin/python3
+# Verly (Space Ultroid) - UserBot
+# Copyright (C) 2021-2022 TeamUltroid for Ultroid & Space Network for Verly
 #
 # This file is a part of < https://github.com/TeamUltroid/Ultroid/ >
-# PLease read the GNU Affero General Public License in
+# Please read the GNU Affero General Public License in
 # <https://www.github.com/TeamUltroid/Ultroid/blob/main/LICENSE/>.
 
 import os
 from time import sleep
 
-ULTROID = r"""
-  _    _ _ _             _     _
- | |  | | | |           (_)   | |
- | |  | | | |_ _ __ ___  _  __| |
- | |  | | | __| '__/ _ \| |/ _  |
- | |__| | | |_| | | (_) | | (_| |
-  \____/|_|\__|_|  \___/|_|\__,_|
+VERLY = r"""
+                _
+/\   /\___ _ __| |_   _
+\ \ / / _ \ '__| | | | |
+ \ V /  __/ |  | | |_| |
+  \_/ \___|_|  |_|\__, |
+                  |___/
 """
 
 
@@ -41,7 +41,7 @@ def clear_screen():
 
 def get_api_id_and_hash():
     print(
-        "Get your API ID and API HASH from my.telegram.org or @ScrapperRoBot to proceed.\n\n",
+        "Get your API ID and API HASH from my.telegram.org to proceed.\n\n",
     )
     try:
         API_ID = int(input("Please enter your API ID: "))
@@ -63,7 +63,7 @@ def telethon_session():
 
         x = "\bDone. Installed and imported Telethon."
     clear_screen()
-    print(ULTROID)
+    print(VERLY)
     print(x)
 
     # the imports
@@ -81,11 +81,11 @@ def telethon_session():
     # logging in
     try:
         with TelegramClient(StringSession(), API_ID, API_HASH) as ultroid:
-            print("Generating a string session for •ULTROID•")
+            print("Generating a string session for •VERLY•")
             try:
                 ultroid.send_message(
                     "me",
-                    f"**ULTROID** `SESSION`:\n\n`{ultroid.session.save()}`\n\n**Do not share this anywhere!**",
+                    f"**VERLY** `SESSION`:\n\n`{ultroid.session.save()}`\n\n**Do not share this anywhere!**",
                 )
                 print(
                     "Your SESSION has been generated. Check your Telegram saved messages!"
@@ -123,7 +123,7 @@ def pyro_session():
         os.system("pip install pyrogram tgcrypto")
         x = "\bDone. Installed and imported Pyrogram."
     clear_screen()
-    print(ULTROID)
+    print(VERLY)
     print(x)
 
     # generate a session
@@ -141,11 +141,11 @@ def pyro_session():
 
 def main():
     clear_screen()
-    print(ULTROID)
+    print(VERLY)
     try:
         type_of_ss = int(
             input(
-                "\nUltroid supports both telethon as well as pyrogram sessions.\n\nWhich session do you want to generate?\n1. Telethon Session.\n2. Pyrogram Session.\n\nEnter choice:  "
+                "\nVerly supports both telethon as well as pyrogram sessions.\n\nWhich session do you want to generate?\n1. Telethon Session.\n2. Pyrogram Session.\n\nEnter choice:  "
             )
         )
     except Exception as e:

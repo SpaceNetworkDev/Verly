@@ -19,13 +19,13 @@ autopic_2: "Nessun risultato trovato per `{}`"
 autopic_3: "Hai una raccolta`{}` correlata alla tua ricerca! \nAvvio di Autopic!"
 
 # inline
-inline_1: "[Supporto Ultroid](t.me/UltroidSupportChat)\n\n
+inline_1: "[Supporto Verly](t.me/VerlySupportChat)\n\n
 **Menù di aiuto di {}.\n\n
 Pʟᴜɢɪɴs ~ {}**"
-inline_2: "[Supporto Ultroid](t.me/UltroidSupportChat)\n\n
+inline_2: "[Supporto Verly](t.me/VerlySupportChat)\n\n
 **Menù di aiuto di {}.\n\n
 Aᴅᴅᴏɴs ~ {}**"
-inline_3: "[Supporto Ultroid](t.me/UltroidSupportChat)\n\n
+inline_3: "[Supporto Verly](t.me/VerlySupportChat)\n\n
 **Menù di aiuto di {}.\n\n
 Aᴅᴅᴏɴs ~ {}\n\n
 Vai e aggiungi la variabile ADDONS con valore true**"
@@ -187,7 +187,7 @@ wrd_3: "**Word** - `{}`\n\n**Antonyms** - \n"
 # assisant
 ast_1: "Scegli quale API desideri impostare."
 ast_2: "**remove.bg API**\nInserisci la tua chiave API da remove.bg.\n\nUsa /cancel per terminare l'operazione."
-ast_3: "Ciao {}. Si prega di sfogliare le opzioni"
+ast_3: "Ciao {}, scegli una delle impostazioni che vuoi modificare."
 
 
 chab_1: "Rispondi a un utente o dammi il suo ID/nome utente per aggiungere un chatbot AI!"

@@ -1,18 +1,19 @@
 #!/usr/bin/env bash
-# Ultroid - UserBot
-# Copyright (C) 2021-2022 TeamUltroid
+# Verly (Space Ultroid) - UserBot
+# Copyright (C) 2021-2022 TeamUltroid for Ultroid & Space Network for Verly
 #
 # This file is a part of < https://github.com/TeamUltroid/Ultroid/ >
 # PLease read the GNU Affero General Public License in <https://www.github.com/TeamUltroid/Ultroid/blob/main/LICENSE/>.
 
 
 echo "
-            ┏┳┓╋┏┓╋╋╋╋┏┓┏┓
-            ┃┃┣┓┃┗┳┳┳━╋╋┛┃
-            ┃┃┃┗┫┏┫┏┫╋┃┃╋┃
-            ┗━┻━┻━┻┛┗━┻┻━┛
+            __   __       _
+            \ \ / /__ _ _| |_  _
+             \ V / -_) '_| | || |
+              \_/\___|_| |_|\_, |
+                            |__/
 
-      Visit @TheUltroid for updates!!
+      Verly V1.0.0 [Kasperky Cake] by Ultroid & SN
 
 "
 if [ -f .env ] ; then  set -o allexport; source .env; set +o allexport ; fi

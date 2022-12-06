@@ -2,7 +2,7 @@
   <img src="./resources/extras/logo_readme.jpg" alt="TeamUltroid Logo">
 </p>
 <h1 align="center">
-  <b>Ultroid - UserBot</b>
+  <b>Verly(Space Ultroid) - UserBot</b>
 </h1>
 
 <b>A stable pluggable Telegram userbot + Voice & Video Call music bot, based on Telethon.</b>
@@ -27,10 +27,10 @@
 - [Okteto](#deploy-to-okteto)
 - [Local Machine](#deploy-locally)
 
-# Documentation 
+# Documentation
 [![Documentation](https://img.shields.io/badge/Documentation-Ultroid-blue)](http://ultroid.tech/)
 
-# Tutorial 
+# Tutorial
 - Full Tutorial - [![Full Tutorial](https://img.shields.io/badge/Watch%20Now-blue)](https://www.youtube.com/watch?v=0wAV7pUzhDQ)
 
 - Tutorial to get Redis URL and password - [here.](./resources/extras/redistut.md)

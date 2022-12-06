@@ -1,5 +1,5 @@
-# Ultroid - UserBot
-# Copyright (C) 2021-2022 TeamUltroid
+# Verly (Space Ultroid) - UserBot
+# Copyright (C) 2021-2022 TeamUltroid for Ultroid & Space Network for Verly
 #
 # This file is a part of < https://github.com/TeamUltroid/Ultroid/ >
 # PLease read the GNU Affero General Public License in
@@ -152,7 +152,7 @@ def ultroid_cmd(
                         Button.url("Bot", "t.me/SessionGeneratorBot?start="),
                         Button.url(
                             "Repl",
-                            "https://replit.com/@TheUltroid/UltroidStringSession",
+                            "https://replit.com/@SpaceNetworkDev/GenerateStringSession",
                         ),
                     ],
                 )
@@ -165,12 +165,12 @@ def ultroid_cmd(
                 LOGS.exception(e)
                 date = strftime("%Y-%m-%d %H:%M:%S", gmtime())
                 naam = get_display_name(chat)
-                ftext = "**Ultroid Client Error:** `Forward this to` @UltroidSupportChat\n\n"
+                ftext = "**Verly Client Error:** `Forward this to` @VerlySupportChat\n\n"
                 ftext += "**Py-Ultroid Version:** `" + str(pyver)
-                ftext += "`\n**Ultroid Version:** `" + str(ult_ver)
+                ftext += "`\n**Verly Version:** `" + str(ult_ver)
                 ftext += "`\n**Telethon Version:** `" + str(telever)
                 ftext += f"`\n**Hosted At:** `{HOSTED_ON}`\n\n"
-                ftext += "--------START ULTROID CRASH LOG--------"
+                ftext += "--------START VERLY CRASH LOG--------"
                 ftext += "\n**Date:** `" + date
                 ftext += "`\n**Group:** `" + str(ult.chat_id) + "` " + str(naam)
                 ftext += "\n**Sender ID:** `" + str(ult.sender_id)
@@ -181,7 +181,7 @@ def ultroid_cmd(
                 ftext += str(format_exc())
                 ftext += "`\n\n**Error text:**`\n"
                 ftext += str(sys.exc_info()[1])
-                ftext += "`\n\n--------END ULTROID CRASH LOG--------"
+                ftext += "`\n\n--------END VERLY CRASH LOG--------"
                 ftext += "\n\n\n**Last 5 commits:**`\n"
 
                 stdout, stderr = await bash('git log --pretty=format:"%an: %s" -5')
@@ -195,7 +195,7 @@ def ultroid_cmd(
                         error_log = await asst.send_file(
                             udB.get_key("LOG_CHANNEL"),
                             file,
-                            caption="**Ultroid Client Error:** `Forward this to` @UltroidSupportChat\n\n",
+                            caption="**Verly Client Error:** `Forward this to` @VerlySupportChat\n\n",
                         )
                 else:
                     error_log = await asst.send_message(

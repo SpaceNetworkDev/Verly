@@ -1,5 +1,5 @@
-# Ultroid - UserBot
-# Copyright (C) 2021-2022 TeamUltroid
+# Verly (Space Ultroid) - UserBot
+# Copyright (C) 2021-2022 TeamUltroid for Ultroid & Space Network for Verly
 #
 # This file is a part of < https://github.com/TeamUltroid/Ultroid/ >
 # PLease read the GNU Affero General Public License in
@@ -62,7 +62,7 @@ def main():
 
     suc_msg = """
             ----------------------------------------------------------------------
-                Ultroid has been deployed! Visit @TheUltroid for updates!!
+                Verly has been deployed! Powered with <3 by SN & TeamUltroid
             ----------------------------------------------------------------------
     """
 
@@ -89,7 +89,7 @@ def main():
         pass
 
     LOGS.info(
-        f"Took {time_formatter((time.time() - start_time)*1000)} to start •ULTROID•"
+        f"Took {time_formatter((time.time() - start_time)*1000)} to start •VERLY•"
     )
     LOGS.info(suc_msg)
 
